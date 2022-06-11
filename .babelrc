@@ -1,0 +1,33 @@
+{
+    "comments": true,
+    "presets": [
+       "@babel/preset-react",
+       [
+        "@babel/preset-env",
+        {
+            "targets": {
+                "browsers": [
+                    "last 2 versions",
+                    "ie >= 11"
+                ]
+            }
+        }
+       ],
+       [
+        "@babel/preset-typescript",
+        {
+            "isTSX": true,
+            "allowNamespaces": true,
+            "allExtensions": true
+        }
+       ]
+    ],
+    "plugins":[
+       [
+        "@babel/plugin-proposal-decorators",
+        {
+            "legacy": true,
+        },
+       ]
+    ]
+}
